@@ -1,0 +1,38 @@
+.hotel {
+    &__title span {
+        margin-left: 120px;
+    }
+    &__inner {
+        display: flex;
+    }
+
+    &__photo {
+        margin-right: 100px;
+    }
+
+    &__content-text {   
+        margin-bottom: 80px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__content-text p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__gallery {
+        display: flex;
+        max-width: 600px;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+
+    .hotel__img-1 {
+        margin-bottom: 50px;
+    }
+
+    &__img-2 {
+        margin-bottom: 50px;
+    }
+}
