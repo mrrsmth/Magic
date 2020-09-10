@@ -1,13 +1,10 @@
 .price {
     &__inner {
         display: flex;
-     /*    background-image: url(/images/price-gap.png);
-        background-repeat: no-repeat;
-        background-position: right center; */
     }
 
     &__on {
-        width: 530px;
+        min-width: 530px;
         margin-right: 70px;
     }
 
@@ -18,9 +15,10 @@
     &__item {
         margin-bottom: 20px;
     }
+
     &__img {
-       position: relative;
-       top: -110px;
+        position: relative;
+        top: -110px;
     }
 
     &__item--first {
@@ -30,3 +28,48 @@
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: 1560px) {
+    .price {
+        display: flex;
+        justify-content: center;
+
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 985px) {
+    .price {
+        &__on {
+            min-width: 330px;
+            margin-right: 30px;
+        }
+
+        &__off {
+            min-width: 231px;
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .price {
+        text-align: center;
+
+        &__on {
+            min-width: 230px;
+            margin-right: 0;
+        }
+
+        &__off {
+            min-width: 160px;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
