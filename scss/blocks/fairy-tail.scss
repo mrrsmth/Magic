@@ -1,0 +1,144 @@
+.fairy-tail {
+    &__slider {
+        width: 50%;
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+    }
+
+    &__container {
+        max-width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        margin-left: 55px;
+        max-width: 545px;
+    }
+
+    &__text--first {
+        margin-bottom: 50px;
+    }
+
+    &__text--second {
+        margin-bottom: 50px;
+    }
+
+    &__body-title {
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-family: 'RobotoCondensed-Regular';
+    }
+
+    &__list {
+        margin-bottom: 50px;
+    }
+
+    &__text--three {
+        margin-bottom: 50px;
+    }
+
+    &__title span {
+        margin-left: 250px;
+    }
+}
+
+
+
+.slick {
+    &-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    &-prev {
+        left: 0;
+    }
+
+    &-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .fairy-tail {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__slider {
+            width: 100%;
+        }
+
+        &__content {
+            margin-left: 0;
+            min-width: 100%;
+        }
+
+        &__title {
+            font-size: 76px;
+            line-height: 108px;
+        }
+
+        &__title span {
+            margin-left: 180px;
+            max-width: 300px;
+        }
+
+        .slick-btn {
+            transform: scale(0.8);
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .fairy-tail {
+
+        &__item {
+            max-height: 450px;
+        }
+
+        &__content {
+            margin-left: 0;
+        }
+
+        &__title {
+            font-size: 76px;
+            line-height: 108px;
+        }
+
+        &__title span {
+            margin-left: 180px;
+            max-width: 300px;
+        }
+
+        .slick-btn {
+            transform: scale(0.5);
+        }
+    }
+}
+
+@media (max-width: 355px) {
+    .fairy-tail {
+        &__title {
+            font-size: 35px;
+            line-height: 108px;
+        }
+
+        &__title span {
+            margin-left: 180px;
+            max-width: 300px;
+            margin-left: 130px;
+        }
+    }
+}

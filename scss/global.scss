@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: #000;
+    font-family: 'RobotoCondensed-Light';
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.page-section {
+    margin: 200px auto;
+    max-width: 1920px; //!!для огромного моника, чтобы слайдер не ушел влево при огромном размере моника
+}
+
+.title {
+    font-size: 96px;
+    line-height: 128px;
+    font-family: 'balqis';
+    color: #E2AB3F;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.title span {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    font-family: 'RobotoCondensed-LightItalic';
+    display: block;
+    margin-top: -30px;
+    /*    margin-left: 185px; */
+}
+
+@media (max-width: 991px) {
+    .title {
+        margin: 110px auto;
+    }
+    .page-section {
+        margin: 30px auto;
+        
+}
+}
+@media (max-width: 991px) {
+    .title {
+        font-size: 56px;
+        line-height: 78px;
+        font-family: 'balqis';
+       
+        margin-bottom: 100px;
+    }
+    .title span {
+        font-size: 17px;
+        line-height: 20px;
+        color: #000;
+        font-family: 'RobotoCondensed-LightItalic';
+        display: block;
+        margin-top: -20px;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        margin-bottom: 50px;
+    }
+}

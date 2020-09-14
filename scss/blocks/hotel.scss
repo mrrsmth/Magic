@@ -1,0 +1,146 @@
+.hotel {
+    &__title span {
+        margin-left: 120px;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__photo {
+        margin-right: 100px;
+    }
+
+    &__content-text {
+        margin-bottom: 80px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__content-text p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__gallery {
+        display: flex;
+        max-width: 600px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__img-1 {
+        margin-bottom: 50px;
+    }
+
+    &__img-2 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1560px) {
+    .hotel {
+        &__photo {
+            display: none;
+        }
+
+        &__gallery {
+            display: flex;
+            max-width: 1300px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .hotel {
+        text-align: center;
+
+        &__photo {
+            display: none;
+        }
+
+        &__gallery {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            max-width: 640px;
+        }
+
+        &__gallery img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .hotel {
+        text-align: center;
+
+        &__photo {
+            display: none;
+        }
+
+        &__gallery {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            max-width: 640px;
+        }
+
+        &__gallery img {
+            transform: scale(1);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .hotel {
+
+        &__gallery {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        &__gallery img {
+            margin-bottom: 30px;
+            transform: scale(1, 1);
+        }
+
+        &__img-1 {
+            margin-bottom: 0;
+        }
+
+        &__img-2 {
+            margin-bottom: 0;
+        }
+        &__gallery img {
+            min-width: 320px;
+            min-height: 180px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .hotel {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__title span {
+            margin-left: 70px;
+        }
+        &__gallery img {
+            min-width: 280px;
+            min-height: 150px;
+        }
+    }
+}
